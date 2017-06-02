@@ -37,6 +37,12 @@
 
         .post-item-post-content
         {
+            .post-text
+            {
+                display: inline;
+                
+                
+            }
             
             .extra-text
             {
@@ -51,7 +57,11 @@
                 font-family: Orbitron;
                 font-size: ms(-1);
                 cursor: pointer;
-
+                display: inline;
+                &.hidden
+                {
+                    display:none;
+                }
             }
         }
 

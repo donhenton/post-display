@@ -1,0 +1,50 @@
+//Moble-first Media Queries Mixin
+@mixin forLargeScreens($width) {
+    @media (min-width: #{$width}px) { @content }
+}
+@mixin animation-nav-icon ( $direction: left, $duration: .2s) {
+    transition: $direction $duration;
+}
+
+@mixin fontSize($sizeValue: 1.6) {
+    font-size: ($sizeValue * 10) + px;
+    font-size: $sizeValue + rem;
+}
+
+@mixin fontFace($font-family, $file-path) {
+    @font-face {
+        font: {
+            family: $font-family;
+            weight: normal;
+            style: normal;
+        }
+        //IE9 Compat Modes
+        src: url('#{$file-path}.eot');
+        //IE6-IE8
+        src: url('#{$file-path}.eot?#iefix')
+            format('embedded-opentype'),
+            //Modern Browsers
+            url('#{$file-path}.woff') format('woff'),
+            //Safari, Android, iOS
+            url('#{$file-path}.ttf') format('truetype'),
+            //Safari, Android, iOS
+            url('#{$file-path}.svg') format('svg');
+    }
+}  
+
+
+/// Replace `$search` with `$replace` in `$string`
+/// @author Hugo Giraudel
+/// @param {String} $string - Initial string
+/// @param {String} $search - Substring to replace
+/// @param {String} $replace ('') - New value
+/// @return {String} - Updated string
+@function str-replace($string, $search, $replace: '') {
+  $index: str-index($string, $search);
+  
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+  
+  @return $string;
+}

@@ -1,0 +1,5 @@
+/bower_components/
+/node_modules/
+/nbproject/private
+/public_html/build/
+/public_html/index.html

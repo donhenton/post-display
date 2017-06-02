@@ -1,0 +1,25 @@
+{
+  "name": "post-display",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "keywords": [
+    "util",
+    "functional",
+    "server",
+    "client",
+    "browser"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+    "dependencies": {
+    
+    "jquery": "2.2.2"
+  } 
+}

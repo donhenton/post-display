@@ -1,70 +1,78 @@
-.column-grid-container
-{
 
-    padding: 2rem;
+.post-display
 
-    .hidden
-    {
-        display:none;
+{ 
+    height:400px;
+    overflow:auto;
 
-    }
-
-    &.sample
+    .column-grid-container
     {
 
-        background-color: #ccc;
-        max-width: 1100px;
+        padding: 2rem;
 
 
-    }
-
-    .three-width
-    {
-        width: 29%;
-
-    }
-
-    .grid-item 
-    {
-        background-color: #ffffee;
-        font-size: ms(-1);
-        border: 3px solid #ccc;
-        margin: 1rem;
-        padding: 1rem;
-        //  margin: 2%;
-        //  padding: 2rem;
-
-
-        .post-item-post-content
+        .hidden
         {
-            .post-text
-            {
-                display: inline;
-                
-                
-            }
-            
-            .extra-text
-            {
-                color:red;
-                //display:none;
-            }
+            display:none;
 
-
-            .full-text-trigger
-            {
-                color: blue;
-                font-family: Orbitron;
-                font-size: ms(-1);
-                cursor: pointer;
-                display: inline;
-                &.hidden
-                {
-                    display:none;
-                }
-            }
         }
 
-    }
-}
+        &.sample
+        {
 
+            background-color: #ccc;
+            max-width: 1100px;
+
+
+        }
+
+        .three-width
+        {
+            width: 30%;
+
+        }
+
+        .grid-item 
+        {
+            background-color: #ffffee;
+            font-size: ms(-1);
+            border: 3px solid #ccc;
+            min-height: 200px;
+            margin: 1rem;
+            padding: 1rem;
+
+
+            .post-item-post-content
+            {
+                .post-text
+                {
+                    display: inline;
+
+
+                }
+
+                .extra-text
+                {
+                    color:red;
+                    //display:none;
+                }
+
+
+                .full-text-trigger
+                {
+                    color: blue;
+                    font-family: Orbitron;
+                    font-size: ms(-1);
+                    cursor: pointer;
+                    display: inline;
+                    &.hidden
+                    {
+                        display:none;
+                    }
+                }
+            }
+
+        }
+    }
+
+}

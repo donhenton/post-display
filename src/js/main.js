@@ -1,4 +1,4 @@
-var heightLimit = 140;
+var heightLimit = 100;
 
 var gridObject = $('.column-grid-container').masonry({
     itemSelector: '.grid-item'
@@ -88,6 +88,7 @@ $('.grid-item .post-item-post-content').each(function (i, elem)
     } else
     {
         showButton.toggleClass("hidden");
+        postText.html(text);
     }
     postText.html("(" + len + ") " + postText.html());
     gridObject.masonry();

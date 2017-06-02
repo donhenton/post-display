@@ -1,0 +1,38 @@
+.column-grid-container
+{
+
+    padding: 5rem;
+    
+
+
+    &.sample
+    {
+
+        background-color: #ccc;
+        max-width: 1100px;
+        
+
+    }
+
+    .three-width
+    {
+        width: 30%;
+
+    }
+
+    .grid-item 
+    {
+        background-color: #ffffee;
+        font-size: ms(-1);
+        border: 3px solid #ccc;
+
+        //  margin: 2%;
+        //  padding: 2rem;
+
+
+
+
+
+    }
+}
+

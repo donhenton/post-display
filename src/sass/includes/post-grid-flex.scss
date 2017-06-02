@@ -1,0 +1,41 @@
+.column-grid-container
+{
+    display: flex;
+     flex-wrap: wrap ;
+    flex-direction: row;
+      align-items: baseline;
+   justify-content:space-between;
+    //display: block;
+    //column-count: 3;
+    padding: 2%;
+    
+
+    &.sample
+    {
+
+        background-color: #ccc;
+
+    }
+
+
+    .grid-item 
+    {
+        background-color: #ffffee;
+        font-size: ms(-1);
+        color:red;
+        margin: 1%;
+       // -webkit-column-break-inside:avoid-column;
+      //  -moz-column-break-inside:avoid-column;
+      //  break-inside: avoid-column;
+     // max-height: 200px;
+        
+        &.three-width
+        {
+               width: 30%;
+
+        }
+
+
+    }
+}
+

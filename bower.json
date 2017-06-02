@@ -18,8 +18,8 @@
     "test",
     "tests"
   ],
-    "dependencies": {
-    
-    "jquery": "2.2.2"
-  } 
+  "dependencies": {
+    "jquery": "2.2.2",
+    "masonry": "^4.2.0"
+  }
 }
